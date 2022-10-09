@@ -6,8 +6,6 @@ public class Producer extends Thread{
         this.company=company;
     }
     public void run(){
-        for(int i=0;i<20;i++){
-            company.produce(i);
-        }
+        company.produce();
     }
 }
